@@ -133,20 +133,21 @@ df = pd.DataFrame({
     'Receita Real': [965, 1152, 1330]
 })
 
-plt.figure(figsize=(10, 6))
-plt.plot(df['Ano'], df['Receita Líquida'], marker='o', label='Receita Líquida', linewidth=3)
-plt.plot(df['Ano'], df['Receita Real'], marker='o', label='Receita Real', linewidth=3)
 
-plt.title('Receita Líquida e Receita Real ao Longo dos Anos', fontsize=16, fontweight='bold')
-plt.xlabel('Ano', fontsize=14)
-plt.ylabel('Valor', fontsize=14)
-plt.xticks(df['Ano'])
-plt.legend(fontsize=12)
-plt.grid(True, alpha=0.3)
+fig, ax = plt.subplots(figsize=(10,6))
+ax.plot(df['Ano'], df['Receita Líquida'], marker='o', label='Receita Líquida', linewidth=3)
+ax.plot(df['Ano'], df['Receita Real'], marker='o', label='Receita Real', linewidth=3)
+
+ax.set_title('Receita Líquida e Receita Real ao Longo dos Anos', fontsize=16, fontweight='bold')
+ax.set_xlabel('Ano', fontsize=14)
+st.set_.ylabel('Valor', fontsize=14)
+ax.xticks(df['Ano'])
+ax.legend(fontsize=12)
+ax.grid(True, alpha=0.3)
 
 plt.tight_layout()
 plt.show()
-
+st.pyplot(fig)
 """7) Faça os ajustes necessários e leve este projeto para a web usando GitHub e Streamlit (peso: 2,0)
 
 - Caça os ajustes necessários no projeto para ser publicado no Streamlit
