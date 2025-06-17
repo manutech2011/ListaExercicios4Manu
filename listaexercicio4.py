@@ -23,6 +23,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Lista de Exercícios 4"
+    page_icon"📊",
 )
 
 st.header("Projeto Final – Análise Contábil com Ajuste Econômico")
