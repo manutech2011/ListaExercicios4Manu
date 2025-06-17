@@ -141,7 +141,7 @@ ax.plot(df['Ano'], df['Receita Real'], marker='o', label='Receita Real', linewid
 ax.set_title('Receita Líquida e Receita Real ao Longo dos Anos', fontsize=16, fontweight='bold')
 ax.set_xlabel('Ano', fontsize=14)
 ax.set_ylabel('Valor', fontsize=14)
-ax.xticks(df['Ano'])
+ax.set_xticks(df['Ano'])
 ax.legend(fontsize=12)
 ax.grid(True, alpha=0.3)
 
