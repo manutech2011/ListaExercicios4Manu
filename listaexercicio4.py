@@ -146,7 +146,7 @@ ax.legend(fontsize=12)
 ax.grid(True, alpha=0.3)
 fig.tight_layout()
 
-ax.show()
+ax.set_show()
 st.pyplot(fig)
 """7) Faça os ajustes necessários e leve este projeto para a web usando GitHub e Streamlit (peso: 2,0)
 
