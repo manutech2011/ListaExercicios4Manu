@@ -22,7 +22,7 @@ Este projeto tem como objetivo integrar análise de dados contábeis de empresas
 import streamlit as st
 
 st.set_page_config(
-    page_title="Lista de Exercícios 4"
+    page_title="Lista de Exercícios 4",
     page_icon"📊",
 )
 
