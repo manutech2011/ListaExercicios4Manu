@@ -145,7 +145,7 @@ ax.set_xticks(df['Ano'])
 ax.legend(fontsize=12)
 ax.grid(True, alpha=0.3)
 
-ax.tight_layout()
+ax.set_tight_layout()
 ax.show()
 st.pyplot(fig)
 """7) Faça os ajustes necessários e leve este projeto para a web usando GitHub e Streamlit (peso: 2,0)
